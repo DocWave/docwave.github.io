@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Docwave.GitHub.io by DocWave</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css/css/bootstrap.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <script type="text/javascript" href="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" href="bower_components/bootstrap-css/js/bootstrap.min.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Docwave.GitHub.io by DocWave</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="grad">
+
+
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-4">
-          <img src="DocWave1_512x512.png" style="width:300px" class="img-responsive" alt="vector wave blue and white" />
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-4 title">
-          <h1>DocWave</h1>
-        </div>
-        <div class="col-md-8 col-sm-8 col-xs-8 h2">
-          <h2>Your one stop shop for offline Javascript Documentation</h2>
+        <div class="col-md-12 col-sm-12 col-xs-12 heading">
+          <img src="DocWave1_512x512.png" style="width:300px" alt="vector wave blue and white" />
+          <div class="text">
+            <div class="title_box">
+              <h1>DocWave</h1>
+            </div>
+            <h2>Your one stop shop for offline Javascript Documentation</h2>
+          </div>
         </div>
       </div>
     </div>
     <div class="container button">
-        <button type="button" id="download" class='btn' name="download">Download</button>
-    </div>
+      <button type="button" id="downloadLinux" class='btn' name="downloadLinux">Download Linux</button>
+      <button type="button" id="downloadOSX" class='btn' name="downloadOSX">Download OSX</button>
+  </div>
+  <script type="text/javascript">
+    $('#downloadLinux').click(function(e) {
+      window.location = 'https://www.dropbox.com/s/zv4ic41xsk9o4z9/DocWave-linux-x64.zip?dl=0'
+    });
+    $('#downloadOSX').click(function(e) {
+      window.location = 'https://www.dropbox.com/s/nsd48m4y7uuqjwq/DocWave-darwin-x64.zip?dl=0'
+    });
+  </script>
 
-    <script type="text/javascript">
-      (function($){
-        $('#download').click(function(e){
-          window.location = 'DocWave.app.zip'
-        });
-      })(jquery)
+</body>
 
-    </script>
-
-  </body>
 </html>
