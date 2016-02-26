@@ -21,10 +21,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 heading">
-
           <img src="DocWave1_512x512.png" style="width:300px" alt="vector wave blue and white" />
-
-
           <div class="text">
             <div class="title_box">
               <h1>DocWave</h1>
@@ -35,12 +32,15 @@
       </div>
     </div>
     <div class="container button">
-      <button type="button" id="download" class='btn' name="download">Download</button>
-    </div>
+      <button type="button" id="downloadLinux" class='btn' name="downloadLinux">Download Linux</button>
+      <button type="button" id="downloadOSX" class='btn' name="downloadOSX">Download OSX</button>
   </div>
   <script type="text/javascript">
-    $('#download').click(function(e) {
-      window.location = 'DocWave.app.zip'
+    $('#downloadLinux').click(function(e) {
+      window.location = 'DocWave-linux-x64.zip'
+    });
+    $('#downloadOSX').click(function(e) {
+      window.location = 'DocWave-darwin-x64.zip'
     });
   </script>
 
