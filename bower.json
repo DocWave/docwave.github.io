@@ -1,0 +1,31 @@
+{
+  "name": "docwave.github.io",
+  "homepage": "https://github.com/lfox91/docwave.github.io",
+  "authors": [
+    "lfox91 <lsfox91@gmail.com>"
+  ],
+  "description": "offline javascript documentation",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "javascript",
+    "documentation",
+    "offline",
+    "mdn",
+    "css",
+    "html"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-css": "^3.3.6",
+    "jquery": "^2.2.1"
+  }
+}
