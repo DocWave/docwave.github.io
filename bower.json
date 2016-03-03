@@ -1,22 +1,10 @@
 {
-  "name": "docwave.github.io",
-  "homepage": "https://github.com/lfox91/docwave.github.io",
+  "name": "appsite",
+  "version": "0.0.0",
   "authors": [
-    "lfox91 <lsfox91@gmail.com>"
-  ],
-  "description": "offline javascript documentation",
-  "main": "index.html",
-  "moduleType": [],
-  "keywords": [
-    "javascript",
-    "documentation",
-    "offline",
-    "mdn",
-    "css",
-    "html"
+    "Faiz Malkani <malkanifaiz@gmail.com>"
   ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -25,7 +13,9 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-css": "^3.3.6",
-    "jquery": "^2.2.1"
+    "polymer": "Polymer/polymer#1.0.0",
+    "paper-fab": "PolymerElements/paper-fab#~1.0.3",
+    "paper-ripple": "PolymerElements/paper-ripple#~1.0.1",
+    "iron-icons": "PolymerElements/iron-icons#~1.0.3"
   }
 }
