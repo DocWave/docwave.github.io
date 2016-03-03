@@ -1,49 +1,161 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<html>
+	<head>
+		<!-- CHANGE TITLE AND META ACCORDINGLY -->
+		<title>DocWave</title>
+		<meta name="description" content="">
+		<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+		<link rel="stylesheet" href="css/tidy.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+		<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+        <link href="https://cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+        <script src="https://cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+		<link rel="import" href="bower_components/paper-fab/paper-fab.html">
+		<link rel="import" href="bower_components/iron-icons/iron-icons.html"> -->
+	</head>
+	<body>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Docwave.GitHub.io by DocWave</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css/css/bootstrap.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script type="text/javascript" src="bower_components/bootstrap-css/js/bootstrap.min.js"></script>
-</head>
+		<div class="container" style="width: 100%">
+			<!-- COVER IMAGE AND FLOATING BUTTON -->
+			<div class="cover-image"></div>
+<!--
+			<div class="desktop-fab-container ">
+   REPLACE WITH YOUR APP URL
+   <a href="https://DocWave.io">
+      <paper-fab class="wow fadeInUp desktop-fab" icon="shop"></paper-fab>
+   </a>
+</div>
+-->
 
-<body>
-  <div class="grad">
+			<!-- ICON, NAME AND DESCRIPTION -->
+			<div class="wow fadeInUp content-card">
+				<!-- REPLACE WITH YOUR APP URL -->
+<!--
+				<a href="YOUR_APP_URL_HERE">
+   <paper-fab class="mobile-fab" icon="shop"></paper-fab>
+</a>
+-->
+
+				<div class="icon-and-title-flex">
+					<img src="http://docwave.io/DocWave1_512x512.png" class="appicon"></img>
+					<div class="title-container">
+						<!-- REPLACE WITH YOUR APP NAME -->
+						<span class="text-title" style="font-family: 'Lobster', cursive; color: #00bcd4">DocWave</span>
+						<br><div class="intertext-padding"></div>
+						<!-- REPLACE WITH YOUR DEV NAME -->
+						<span class="text-subtitle">A Browser for Javascript API Documentation</span>
+						<br><div class="intertext-padding"></div>
+					</div>
+				</div><br><br>
+				<!-- REPLACE WITH YOUR APP DESCRIPTION -->
+				<span class="text-description" style="font-size: 1.1em">DocWave is a developer documentation tool to easily browse through JavaScript APIs. The application currently comes with Node, Express, and Mozilla's documentation for HTML, CSS, and JavaScript. If you would like try it out, the download links are below. If you would like to contribute or raise issues, our github page can be found <a style="text-decoration: underline" href="https://github.com/DocWave/">here</a>.
+			</div>
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 heading">
-          <img src="DocWave1_512x512.png" style="width:300px" alt="vector wave blue and white" />
-          <div class="text">
-            <div class="title_box">
-              <h1>DocWave</h1>
-            </div>
-            <h2>Your one stop shop for offline Javascript Documentation</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container button">
-      <button type="button" id="downloadLinux" class='btn' name="downloadLinux">Download Linux</button>
-      <button type="button" id="downloadOSX" class='btn' name="downloadOSX">Download OSX</button>
-  </div>
-  <script type="text/javascript">
-    $('#downloadLinux').click(function(e) {
-      window.location = 'https://www.dropbox.com/s/zv4ic41xsk9o4z9/DocWave-linux-x64.zip?dl=0'
-    });
-    $('#downloadOSX').click(function(e) {
-      window.location = 'https://www.dropbox.com/s/nsd48m4y7uuqjwq/DocWave-darwin-x64.zip?dl=0'
-    });
-  </script>
 
-</body>
+			<!-- OTHER APPS BY YOU -->
+			<div class="wow fadeInUp content-works">
+			    <div class="screenshot-item">
+                    <a href="img/screenshots/docwave_in_action.jpg" data-featherlight="image">
+                        <img src="img/screenshots/docwave_in_action.jpg">
+                    </a>
+                </div>
+                <!-- <div class="screenshot-item">
+                    <a href="img/screenshots/ss2.png" data-featherlight="image">
+                        <img src="img/screenshots/ss2.png">
+                    </a>
+                </div> -->
+                <!-- <div class="screenshot-item">
+                    <a href="img/screenshots/ss3.png" data-featherlight="image">
+                        <img src="img/screenshots/ss3.png">
+                    </a>
+                </div>
+                <div class="screenshot-item">
+                    <a href="img/screenshots/ss4.png" data-featherlight="image">
+                        <img src="img/screenshots/ss4.png">
+                    </a>
+                </div> -->
+     	    </div>
 
+
+		<!-- APP DETAILS -->
+		<div class="wow fadeInUp content-card" style="margin-top: 0;">
+     		<span class="text-subtitle" style="font-size: 2em; font-weight: 300; color: #333">Details</span>
+			<br><br>
+			<div>
+				<div class="detail-item">
+					<span class="text-description">Version 0.1.0<span>
+				</div>
+				<div class="detail-item">
+					<span class="text-description"><a style="text-decoration: underline" href='http://bit.ly/1Qqpm1z'> OSX Download </a> (>= 10.8)</span>
+				</div>
+				<div class="detail-item">
+					<span class="text-description"><a style="text-decoration: underline" href='http://bit.ly/1OOhSDD'>Linux Download</a></span>
+				</div>
+				<div class="detail-item">
+					<span class="text-description">Github</span>
+				</div>
+				<!-- <div class="detail-item">
+					<span class="text-description">10,000+ downloads</span>
+				</div>
+				<div class="detail-item">
+					<span class="text-description">Contains in-app purchases</span>
+				</div> -->
+			</div>
+     	</div>
+
+		<!-- SPACE BELOW DETAILS -->
+		<div class="empty-space">
+			<div class="meta-container wow fadeInUp">
+				<div class="wow fadeInUp detail-item watermark credits">
+						<span class="text-description credits-text" style="
+						color: #FFF;
+						padding: 5 10;
+						background: rgba(0, 0, 0, 0.5)
+						">Made with &#9825; by Lea, Dan, &amp; Cruz</span>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- ===================================================================================================== -->
+
+		<!-- JAVASCRIPT -->
+
+		<!-- Animations -->
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+
+		<!-- Scrollwheel Smoothing -->
+		<script>
+			$(function()
+			{
+				var $window = $(window);
+				var scrollTime = 0.2;
+				var scrollDistance = 270;
+				$window.on("mousewheel DOMMouseScroll", function(event)
+				{
+
+					event.preventDefault();
+					var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+					TweenMax.to($window, scrollTime,
+					{
+						scrollTo : { y: finalScroll, autoKill:true }, ease: Power1.easeOut, overwrite: 5
+
+					});
+				});
+			});
+		</script>
+	</body>
 </html>
